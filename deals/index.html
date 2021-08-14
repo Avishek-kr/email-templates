@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals</title>
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: 0;
+            text-decoration: none;
+            transition: .2s linear;
+        }
+
+        body {
+            background-color: #161416;
+            color: #ffffff;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .wrapper-container {
+            width: 30%;
+        }
+
+        .container .wrapper-content {
+            background-color: #2A2A2A;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container .wrapper-content .logo img {
+            width: 70%;
+        }
+
+        .container .wrapper-content h2 {
+            font-size: 40px;
+            font-weight: 200;
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        .container .wrapper-content img {
+            width: 115%;
+        }
+
+        .container .wrapper-content p {
+            font-size: 35px;
+            font-weight: 200;
+        }
+
+        .container .wrapper-content span.price {
+            font-size: 60px;
+            font-weight: 500;
+        }
+
+        .container .wrapper-content button {
+            background-color: #FFCCCC;
+            padding: 10px 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        .container .wrapper-content button:hover {
+            background-color: transparent;
+            border: 1px solid #FFCCCC;
+        }
+
+        .container .wrapper-content button:hover a {
+            color: #FFCCCC;
+        }
+
+        .container .wrapper-content button a {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        @media(max-width:1199px) {
+            .wrapper-container {
+                width: 50%;
+            }
+        }
+
+        @media(max-width:768px) {
+            .wrapper-container {
+                width: 90%;
+            }
+
+            .container .wrapper-content h2 {
+                width: 100%;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="wrapper-container">
+            <div class="wrapper-content">
+                <div class="logo">
+                    <img src="./Frame 85 (1).png" alt="">
+                </div>
+                <h2>The Greatest Deals is Finally here!</h2>
+                <img style="height: 300px; object-fit: contain;" src="./home_fifa22.jpg" alt="">
+                <p style="margin-top:20px;">Just <span style="font-weight: 500;">$</span><span class="price">19,-</span>
+                </p>
+                <p style="font-size: 20px;">Now Available on the Website.</p>
+                <button><a href="#">Order Now</a></button>
+            </div>
+            <div class="footer">
+                © 2021 Esports4g.com. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

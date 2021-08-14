@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
+    <title>Order</title>
+</head>
+<body>
+    <style>
+        *{
+        font-family: 'Roboto', sans-serif;
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+        outline: none; border: 0;
+        text-decoration: none;
+        transition: .2s linear;
+    }
+    
+    body{
+        background-color: #F6F5F5;
+    }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .wrapper-container {
+            width: 50%;
+        }
+    
+        .container .wrapper-content {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container .wrapper-content p{
+           margin-top: 20px;
+           color: #AEAEAE;
+        }
+        .container .wrapper-content h3{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 10px;
+        }
+        .container .wrapper-content .items-container{
+            display: flex;
+            align-items: center;
+            text-align: left;
+            justify-content: space-between;
+            width: 90%;
+            background: #FAFAFA;
+            padding: 20px 30px;
+            margin-top: 20px;
+        }
+        .container .wrapper-container .items-container .left-content span{
+            color: #A6CB66;
+        }
+        .container .wrapper-content .items-container p{
+            margin-top: 0px;
+        }
+        .container .wrapper-content .items-container .right-content{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           width: 40%;
+        }
+        .container .wrapper-content .items-container .right-content .right-img img{
+           height: 70px;
+           width: 70px;
+           background: #FFCCCC;
+           border-radius: 50%;
+           object-fit: contain;
+        }
+        .container .wrapper-content .items-container .right-content p{
+           font-size: 12px;
+        }
+        .container .wrapper-content .items-container .right-content h4{
+            color: #AEAEAE;
+        }
+        .container .wrapper-content button{
+            background-color:#A6CB66;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+            border: none;
+        }
+        .container .wrapper-content button:hover{
+            background-color:transparent;
+            border:1px solid #A6CB66;
+        }
+        .container .wrapper-content button:hover a{
+            color: #A6CB66;
+        }
+        .container .wrapper-content button a{
+            color: #ffffff;
+            font-size: 14px;
+        }
+        .footer{
+        margin-top: 30px;
+         color: #000000;
+        }
+    @media(max-width:1199px){
+        .wrapper-container {
+            width: 80%;
+        }
+    }
+    @media(max-width:768px){
+        .wrapper-container {
+            width:100%;
+        }
+        .container .wrapper-content {
+            padding: 40px  0px;
+        }
+    }
+</style>    
+
+
+        <div class="container">
+            <div class="wrapper-container">
+                <div class="wrapper-content">  
+                        <div class="logo">
+                            <img src="./Frame 85 (1).png" alt="">
+                        </div>
+                        <p>Thank you for your order,</p>
+                        <h3>Your downloads are waiting!</h3>
+                        <div class="items-container">
+                            <div class="left-content">
+                                <p>July 20, 2021</p>
+                                <span>40 Vector Shaped Icons - by Flatti</span>
+                            </div>
+                            <div class="right-content">
+                                <div class="left-price">
+                                    <p>Price</p>
+                                    <h4>Free</h4>
+                                </div>
+                                <div class="right-img">
+                                    <img src="./logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-container">
+                            <div class="left-content">
+                                <p>July 20, 2021</p>
+                                <span>Social Icons Font - by Emperio</span>
+                            </div>
+                            <div class="right-content">
+                                <div class="left-price">
+                                    <p>Price</p>
+                                    <h4>$60 usd</h4>
+                                </div>
+                                <div class="right-img">
+                                    <img src="./logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-container">
+                            <div class="left-content">
+                                <p>July 20, 2021</p>
+                                <span>Flat UI Kit - by Rosetta</span>
+                            </div>
+                            <div class="right-content">
+                                <div class="left-price">
+                                    <p>Price</p>
+                                    <h4>$20 usd</h4>
+                                </div>
+                                <div class="right-img">
+                                    <img src="./logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button><a href="#">View your Account</a></button>
+                </div>
+            </div>
+            <div class="footer">
+                © 2021 Esports4g.com. All Rights Reserved.
+            </div>
+        </div>
+</body>
+</html>

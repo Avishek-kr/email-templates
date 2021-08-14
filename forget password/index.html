@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget password</title>
+</head>
+<body>
+    <style>
+    *{
+        font-family: 'Roboto', sans-serif;
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+        outline: none; border: 0;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
+    
+    body{
+        background-color: #E7F0F7;
+    }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .wrapper-container {
+            width: 30%;
+        }
+    
+        .container .wrapper-content {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container .wrapper-content h1{
+            font-size: 50px;
+        }
+        .container .wrapper-content p{
+            font-size: 20px;
+            margin: 20px 50px;
+        }
+        .container .wrapper-content .logo{
+            margin: 20px;
+        }
+        .container .wrapper-content button{
+            background-color:#ED5659;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border: none;
+        }
+        .container .wrapper-content button:hover{
+            background-color:transparent;
+            border:1px solid #ED5659;
+        }
+        .container .wrapper-content button:hover a{
+            color: #ED5659;
+        }
+        .container .wrapper-content button a{
+            color: #ffffff;
+            font-size: 14px;
+        }
+        .container .wrapper-content li{
+            list-style: none;
+            float: right;
+            margin:0 20px;
+            padding: 5px;
+            border: 1px solid  #ED5659;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 0;
+        }
+        .container .wrapper-container li img{
+            filter: invert(0.4) sepia(1) saturate(20) hue-rotate(0deg) brightness(1);
+        }
+        .footer{
+        margin-top: 30px;
+         color: #000000;
+        }
+        @media(max-width:1199px){
+        .wrapper-container {
+            width: 50%;
+        }
+    }
+    @media(max-width:768px){
+        .wrapper-container {
+            width:90%;
+        }
+    }
+    </style>
+    <div class="container">
+        <div class="wrapper-container">
+            <div class="wrapper-content">
+                <div class="heading">
+                    <h1>Oops!</h1>
+                </div>
+                <p>It seems that you've forgotten your password.</p>
+                <div class="logo">
+                    <img src="./Frame 85 (1).png" alt="">
+                </div>
+                <button><a href="#">Let's re-align with the Satellites!</a></button>
+                <p>Esports4g</p>
+                <div class="icons">
+                    <ul>
+                        <li><a href="#"><img src="./insta.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./insta.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./twitter.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    © 2021 Esports4g.com. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
