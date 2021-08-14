@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
-    <title>Email password</title>
+    <title>blog</title>
 </head>
 <style>
     *{
@@ -34,49 +34,42 @@ body{
     }
 
     .wrapper-container {
-        width: 30%;
+        width: 40%;
     }
 
     .container .wrapper-content {
         background-color: #ffffff;
-        text-align: center;
-        padding: 40px 50px;
-        border-radius: 20px;
+        /* border-radius: 20px; */
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
-
-    .wrapper-content .logo {
-        margin-bottom: 20px;
+    .container .wrapper-content .left-container{
+        display: flex;
     }
-
-    .wrapper-content p {
-        color: #AEAEAE;
+    .container .wrapper-content .left-container img{
+        width: 100%;
+        height: 400px;
+    }
+    .container .wrapper-content .right-container{
+        width: 50%;
+        padding:0 20px;
+    }
+    .container .wrapper-content .right-container h3{
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: -50px;
+    }
+    .container .wrapper-content .right-container p{
+        padding: 30px 0;
         line-height: 1.5;
-        margin: 50px;
-    }
-
-    .wrapper-content .footer-heading {
         color: #AEAEAE;
-        line-height: 1.5;
     }
-
-    .wrapper-content .email-content span {
-        color: #AEAEAE;
-        letter-spacing: 0.5px;
-    }
-
-    .wrapper-content .email-content a {
-        color: #F18E3F;
-    }
-
-    .wrapper-content .reset-button button {
+    .wrapper-content  button {
         margin-top: 22px;
         color: #ffffff;
-        background-color: #F18E3F;
-        padding: 15px 25px;
-        border-radius: 10px;
+        background-color: #B92547;
+        padding: 10px 25px;
+        border-radius: 50px;
     }
     .container .wrapper-content button:hover{
             background-color:transparent;
@@ -85,11 +78,14 @@ body{
         .container .wrapper-content button:hover a{
             color: #F18E3F;
         }
-    .wrapper-content .reset-button a {
+    .wrapper-content button a {
         color: #ffffff;
-        font-size: 15px;
+        font-size: 12px;
+        font-weight: 500;
         text-transform: uppercase;
     }
+
+    
     .footer{
         margin-top: 30px;
          color: #000000;
@@ -123,28 +119,20 @@ body{
 <body>
     <div class="container">
         <div class="wrapper-container">
-
             <div class="wrapper-content">
-                <div class="logo">
-                    <img src="./logo.png" alt="">
-                </div>
-                <div class="email-content">
-                    <span>Dear User,</span>
-                    <p>You (or someone pretending to be you) requested a password reset for your account. If you didn't made
-                        this request you can ignore this email.</p>
-                        <div class="footer-heading">
-                            <span>If you didn't request a password reset,</span>
-                        </div>
-                        <a href="#">let us know as soon as possible</a>
-                    </div>
-                    <div class="reset-button">
-                        <button><a href="#">Reset Password now</a></button>
-                    </div>
-                </div>
+               <div class="left-container">
+                   <img src="./home_fifa22.jpg" alt="fifa22">
+               </div>
+               <div class="right-container">
+                   <h3>10 Essential Tips for the Modern Wine Drinker</h3>
+                   <p>Lorem ipsum dolor sit amet, consur ading elit, sed do eiusmod tempor incididunt ut sed do e labore et dolore magna aliqua...</p>
+                   <button><a href="#">Read More</a></button>
+               </div>
             </div>
+        </div>
             <div class="footer">
                 © 2021 Esports4g.com. All Rights Reserved.
             </div>
-        </div>
-    </body>
-        </html>
+    </div>
+</body>
+</html>
